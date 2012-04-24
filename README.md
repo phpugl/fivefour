@@ -3,7 +3,6 @@ PHPUGL 5.4
 
 [PHPUGL](http://phpugl.de) demo box with PHP 5.4 from PPA.
 Please don't use it to build fresh boxes, as `/manifests/default` is a complete mess.
-Should work with Vagrant >= 0.9.7.
 
     gem install vagrant
     vagrant up
@@ -18,3 +17,10 @@ Features
 * nginx 0.7.65-1ubuntu2.2
 * php-cli 5.4.0-3~lucid+4
 * php-fpm 5.4.0-3~lucid+4
+
+
+Requirements
+------------
+* Vagrant >= 0.9.7.
+* At least 512 MB RAM for the virtual machine
+* Don't forget to sync the submodules. :-)

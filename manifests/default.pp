@@ -31,6 +31,16 @@ class phpugl {
     target => "/etc/nginx/sites-available/phpugl.local"
   }
 
+  group { "puppet": 
+    ensure => "present",
+  }
+  
+  user { "puppet":
+		ensure => "present",
+    gid => "puppet",
+    require => Group["puppet"]
+	}
+
 }
 
 include phpugl
